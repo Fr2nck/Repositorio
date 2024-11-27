@@ -16,7 +16,6 @@ public class Ejercicio03 {
     for (int i = 0; i < numeros.length; i++) {
         System.out.print(numeros[i] + " ");
         }
-
         System.out.println(" ");
         System.out.println("Ingresa el valor que quieres cambiar: ");
         int antiguo = Integer.parseInt(System.console().readLine());

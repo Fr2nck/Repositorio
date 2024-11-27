@@ -9,12 +9,10 @@ public class Array03 {
             System.out.println("Ingresa el valor para la posicion: " + i);;
             numeros[i] = Integer.parseInt(System.console().readLine());
         }*/
-
         //Estructura repetitiva para ingresar numeros de forma automatica
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = (int) (Math.random() * 21);
         }
-
         //Estructura repetitiva para imprimir los numeros
         System.out.println("El arreglo tiene los siguiente elementos:");
         for (int i = 0; i < numeros.length; i++) {

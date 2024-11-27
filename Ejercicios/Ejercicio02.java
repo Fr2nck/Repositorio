@@ -9,7 +9,7 @@ debe pasar a la posicion 0. Finalmente muestre el contenido del array.*/
         //Estructura para ingresar 15 numeros manualmente
         System.out.println("Ingrese 10 numeros enteros para el arreglo");
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println("Numero para la posición " + i + ":");
+            System.out.println("Numero para la posición " + i + " del arreglo:");
             numeros[i] = Integer.parseInt(System.console().readLine());
         }
         //Estructura para imprimir los valores del arreglo ingresado
@@ -19,6 +19,7 @@ debe pasar a la posicion 0. Finalmente muestre el contenido del array.*/
         }
         //Estructura para reordenar los valores del arreglo con la ayuda de una variable auxiliar
         int aux = numeros[numeros.length-1];
+        System.out.println("El numero auxiliar es: " + aux);
         for (int i = numeros.length-1; i > 0; i--) {
             numeros[i] = numeros[i-1]; 
         }

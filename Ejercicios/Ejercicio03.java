@@ -14,7 +14,11 @@ public class Ejercicio03 {
         System.out.println("El arreglo tiene los siguiente elementos:");
     for (int i = 0; i < numeros.length; i++) {
         System.out.print(numeros[i] + " ");
+        //Estructura para ayudar a imprimir el array en grupos de 10
+        if ((i+1) % 10 == 0) {
+            System.out.println();
         }
+        }        
         System.out.println(" ");
         System.out.println("Ingresa el valor que quieres cambiar: ");
         int antiguo = Integer.parseInt(System.console().readLine());

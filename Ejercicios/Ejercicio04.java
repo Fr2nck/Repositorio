@@ -8,7 +8,7 @@ public class Ejercicio04 {
 public static void main(String[] args) {
     int[] temperatura = new int[12];
     for (int i = 0; i < temperatura.length; i++) {
-        System.out.println("Ingresa la temperaturamedia:");
+        System.out.println("Ingresa la temperatura media del mes:" + i);
         temperatura[i] = Integer.parseInt(System.console().readLine());
     }
     for (int i = 0; i < temperatura.length; i++) {

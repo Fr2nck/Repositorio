@@ -29,7 +29,7 @@ public class Ejercicio02 {
                     numerosimpares[indeximpares++] = numeros[i];
                 }
         }
-        //arreglo y contador auxiliares
+        //arreglo y contador auxiliar
         int[] numerosordenados = new int[numeros.length];
         int indexnumerosordenados = 0;
         //agregar los valores al arreglo final

@@ -6,14 +6,15 @@ public class Ejercicio04 {
     horizontales con esos datos. Las barras del diagrama se pueden dibujar a base de 
     asteriscos o cualquier otro carácter. */
 public static void main(String[] args) {
-    int[] temperatura = new int[2];
+    int[] temperatura = new int[12];
     for (int i = 0; i < temperatura.length; i++) {
         System.out.println("Ingresa la temperaturamedia:");
         temperatura[i] = Integer.parseInt(System.console().readLine());
     }
     for (int i = 0; i < temperatura.length; i++) {
-        System.out.println("La temperatura del mes " + i + " Es de: " + temperatura[i]);
-        for (int j = 0; j < temperatura.length; j++) {
+        System.out.println(" ");
+        System.out.println("La temperatura del mes " + i + " Es de: " + temperatura[i] + " Grados");
+        for (int j = 0; j < temperatura[i]; j++) {
             if (j<temperatura[i]) {
                 System.out.print("*");
             };

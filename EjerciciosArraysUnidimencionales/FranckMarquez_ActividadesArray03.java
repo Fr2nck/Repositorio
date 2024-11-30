@@ -1,5 +1,5 @@
 package EjerciciosArraysUnidimencionales;
-public class Ejercicio03 {
+public class FranckMarquez_ActividadesArray03 {
     /*Ejercicio 3 Realiza un programa que pida 10 números por teclado y que los almacene
     en un array. A continuación se mostrará el contenido de ese array junto al índice (0 – 9)
     utilizando para ello una tabla. Seguidamente el programa pasará los primos a las primeras 

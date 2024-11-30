@@ -7,11 +7,11 @@ public class Ejercicio02 {
     Utiliza arrays auxiliares si es necesario.*/
     public static void main(String[] args) {
         int[] numeros = new int[20];
-        //Estructura repetitiva para ingresar numeros de forma automatica
+        //Ingresar numeros del (0 al 100) de forma automatica
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = (int) (Math.random() * 101);
         }
-        //Estructura para imprimir los valores del arreglo generado
+        //Imprimir los valores del arreglo generado
         System.out.println("Los valores generados del arreglo son:");
         for (int i = 0; i < numeros.length; i++) {
             System.out.print("[" + numeros[i] + "]" + " ");
@@ -29,7 +29,7 @@ public class Ejercicio02 {
                     numerosimpares[indeximpares++] = numeros[i];
                 }
         }
-        //arreglo y contador auxiliar
+        //arreglo y contador auxiliar final
         int[] numerosordenados = new int[numeros.length];
         int indexnumerosordenados = 0;
         //agregar los valores al arreglo final

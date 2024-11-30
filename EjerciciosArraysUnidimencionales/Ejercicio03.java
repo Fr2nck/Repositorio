@@ -1,12 +1,10 @@
 package EjerciciosArraysUnidimencionales;
 public class Ejercicio03 {
-    /*Ejercicio 3 Realiza un programa que pida 10 números por teclado
-    y que los almacene en un array. A continuación se mostrará el 
-    contenido de ese array junto al índice (0 – 9) utilizando para ello
-    una tabla. Seguidamente el programa pasará los primos a las primeras 
-    posiciones, desplazando el resto de números (los que no son primos) 
-    de tal forma que no se pierda ninguno. Al final se debe mostrar el 
-    array resultante.*/
+    /*Ejercicio 3 Realiza un programa que pida 10 números por teclado y que los almacene
+    en un array. A continuación se mostrará el contenido de ese array junto al índice (0 – 9)
+    utilizando para ello una tabla. Seguidamente el programa pasará los primos a las primeras 
+    posiciones, desplazando el resto de números (los que no son primos) de tal forma que
+    no se pierda ninguno. Al final se debe mostrar el array resultante.*/
     public static void main(String[] args) {
         int[] numeros = new int [10];
         //pedir ingresar 10 numeros enteros
@@ -36,12 +34,14 @@ public class Ejercicio03 {
             } else if (numeros[i] == 2) {
                 primos[indexprimos++] = numeros[i];          
             } else {
+                //Variable auxiliar
                 boolean esPrimo = true;
+                //verificar si el numero tiene mas divisores ademas de 1 y de si mismo
                 for (int j = 2; j <= Math.sqrt(numeros[i]) ; j++) {
                     if (numeros[i] % j == 0) {
                         esPrimo = false;
                         break;                       
-                    }                    
+                    }
                 }
                 if (esPrimo) {
                     primos[indexprimos++] = numeros[i];

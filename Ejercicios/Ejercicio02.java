@@ -7,7 +7,7 @@ debe pasar a la posicion 0. Finalmente muestre el contenido del array.*/
     public static void main(String[] args) {
         int[] numeros = new int[15];
         //Estructura para ingresar 15 numeros manualmente
-        System.out.println("Ingrese 10 numeros enteros para el arreglo");
+        System.out.println("Ingrese 15 numeros enteros para el arreglo");
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Numero para la posición " + i + " del arreglo:");
             numeros[i] = Integer.parseInt(System.console().readLine());

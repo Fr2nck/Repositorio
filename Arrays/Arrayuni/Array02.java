@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Arrayuni;
 
 public class Array02 {
     public static void main(String[] args) {

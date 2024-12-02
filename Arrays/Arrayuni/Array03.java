@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Arrayuni;
 public class Array03 {
     public static void main(String[] args) {
         //Inicializar el arreglo de 10 elementos

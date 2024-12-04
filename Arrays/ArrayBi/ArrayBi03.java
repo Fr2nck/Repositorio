@@ -25,7 +25,7 @@ public class ArrayBi03 {
             System.out.printf("|%7d\n", sumafila);
         }     
         //Inicializacion de un arreglo auxiliar
-        System.out.println("____________________________________");
+        System.out.println("------------------------------------");
         int sumacolumna;
         int sumatotal = 0;
         for (columna = 0; columna < 5; columna++) {

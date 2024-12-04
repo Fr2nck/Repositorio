@@ -22,7 +22,7 @@ public class ArrayBi03 {
             System.out.print("   Columna " + columna);
         }
         System.out.println();
-        //Imprimir el señañizacor de filas
+        //Imprimir el señalizacor de filas
         for (fila = 0; fila < 5; fila++) {
             System.out.print("Fila: " + fila + "|");
             for (columna = 0; columna < 6; columna++) {

@@ -13,9 +13,6 @@ public class ArrayBi03 {
                 numeros[fila][columna] = Integer.parseInt(System.console().readLine()) ;
             }
         }
-        for (int i = 0; i < numeros.length; i++) {
-            
-        }
         //Imprimir el señalizador de columnas
         System.out.print("        ");
         for (columna = 0; columna < 5; columna++) {

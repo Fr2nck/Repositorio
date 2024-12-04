@@ -26,9 +26,10 @@ public class ArrayBi04 {
             }    
             System.out.println();        
         }
+        //Declaracion de variables para maximo y minimo
+        int maximo = Integer.MIN_VALUE;
+        int minimo = Integer.MAX_VALUE;
         //Maximo
-        int maximo = 0;
-        int minimo = 1000;
         for (fila = 0; fila < 6; fila++) {
             for (columna = 0; columna < 10; columna++) {
                 if (numeros[fila][columna] > maximo) {

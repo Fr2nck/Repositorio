@@ -25,13 +25,17 @@ public class ArrayBi03 {
             System.out.printf("|%7d\n", sumafila);
         }     
         //Inicializacion de un arreglo auxiliar
+        System.out.println("____________________________________");
         int sumacolumna;
+        int sumatotal = 0;
         for (columna = 0; columna < 5; columna++) {
             sumacolumna = 0; 
             for (fila = 0; fila < 4; fila++) {
-                sumacolumna = sumacolumna + numeros[fila][columna];                
+                sumacolumna = sumacolumna + numeros[fila][columna];
+                sumatotal = sumatotal + sumacolumna;                 
             }
             System.out.printf("%7d", sumacolumna);
-        }   
+        }
+        System.out.printf("|%7d\n", sumatotal);   
     }
 }

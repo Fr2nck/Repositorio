@@ -5,7 +5,7 @@ public class ArrayBi03 {
     parciales de filas y columnas igual que si de una hoja de cálculo se tratara. 
     La suma total debe aparecer en la esquina inferior derecha. */
     public static void main(String[] args) {
-        int[][] numeros = new int[5][6];
+        int[][] numeros = new int[4][5];
         int fila, columna;
         for (fila = 0; fila < 4; fila++) {
             for (columna = 0; columna < 5; columna++) {
@@ -13,19 +13,25 @@ public class ArrayBi03 {
                 numeros[fila][columna] = Integer.parseInt(System.console().readLine()) ;
             }
         }
-        //Imprimir el señalizador de columnas
-        System.out.print("        ");
-        for (columna = 0; columna < 5; columna++) {
-            System.out.print("   Columna " + columna);
-        }
         System.out.println();
-        //Imprimir el señalizacor de filas
-        for (fila = 0; fila < 5; fila++) {
-            System.out.print("Fila: " + fila + "|");
-            for (columna = 0; columna < 6; columna++) {
-                System.out.printf("%10d", numeros[fila][columna]);
-            }    
-            System.out.println();
-        }          
+        //Inicializacion de un arreglo auxiliar
+        int sumafila;
+        for (fila = 0; fila < 4; fila++) {
+            sumafila = 0; 
+            for (columna = 0; columna < 5; columna++) {
+                System.err.printf("%7d",numeros[fila][columna]);
+                sumafila = sumafila + numeros[fila][columna];                
+            }
+            System.out.printf("|%7d\n", sumafila);
+        }     
+        //Inicializacion de un arreglo auxiliar
+        int sumacolumna;
+        for (columna = 0; columna < 5; columna++) {
+            sumacolumna = 0; 
+            for (fila = 0; fila < 4; fila++) {
+                sumacolumna = sumacolumna + numeros[fila][columna];                
+            }
+            System.out.printf("%7d", sumacolumna);
+        }   
     }
 }

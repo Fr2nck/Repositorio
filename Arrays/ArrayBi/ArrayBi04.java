@@ -6,6 +6,10 @@ public class ArrayBi04 {
     public static void main(String[] args) {
         int[][] numeros = new int[6][10];
         int fila,columna;
+        int filamax = 0;
+        int columnamax = 0;
+        int filamin = 0;
+        int columnamin = 0;
         for (fila = 0; fila < 6 ; fila++) {
             for (columna = 0; columna < 10; columna++) {
                 numeros[fila][columna] = (int)(Math.random() *1001); 
@@ -34,18 +38,22 @@ public class ArrayBi04 {
             for (columna = 0; columna < 10; columna++) {
                 if (numeros[fila][columna] > maximo) {
                     maximo = numeros[fila][columna];
+                    filamax = fila;
+                    columnamax = columna;
                 } 
             }          
         }
-        System.out.println("El numero maximo es: " + maximo + " y se encuentra en la posiciòn: " );
+        System.out.println("El numero maximo es: " + maximo + " y se encuentra en la posiciòn: " + "(" + filamax + "," + columnamax + ")");
         //Minimo
         for (fila = 0; fila < 6; fila++) {
             for (columna = 0; columna < 10; columna++) {
                 if (numeros[fila][columna] < minimo) {
                     minimo = numeros[fila][columna];
+                    filamin = fila;
+                    columnamin = columna;
                 }
             }          
         }
-        System.out.println("El numero minimo es: " + minimo + " y se encuentra en la posiciòn: " );
+        System.out.println("El numero minimo es: " + minimo + " y se encuentra en la posiciòn: " + "(" + filamin + "," + columnamin + ")");
     }
 }

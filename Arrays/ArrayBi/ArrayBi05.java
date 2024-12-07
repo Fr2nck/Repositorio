@@ -1,8 +1,6 @@
 package Arrays.ArrayBi;
-
 import java.util.HashSet;
 import java.util.Set;
-
 public class ArrayBi05{
     /*Ejercicio 3 Realiza un programa que rellene un array de 6 filas por 10 columnas con números enteros
     positivos comprendidos entre 0 y 1000 (ambos incluidos). A continuación, el programa deberá dar la posición
@@ -20,10 +18,10 @@ public class ArrayBi05{
             for (columna = 0; columna < 10; columna++) {
                 int numero;
                 do {
-                    numero = (int)(Math.random() * 1001); // Generar un número aleatorio
-                } while (generados.contains(numero)); // Repetir hasta que no esté en el conjunto
+                    numero = (int)(Math.random() * 1001);
+                } while (generados.contains(numero));
                 numeros[fila][columna] = numero;
-                generados.add(numero); // Agregar al conjunto
+                generados.add(numero);
             }
         }
         //Señalizador de columnas

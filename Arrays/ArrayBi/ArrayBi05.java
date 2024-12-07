@@ -26,7 +26,6 @@ public class ArrayBi05{
                 } while (repetido);
             }            
         }
-
         /*//Llenar el arreglo con numeros aleatorios con hashSet
         Set<Integer> generados = new HashSet<>();        
         for (fila = 0; fila < 6; fila++) {

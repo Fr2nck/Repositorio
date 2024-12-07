@@ -1,19 +1,34 @@
 package Arrays.ArrayBi;
-import java.util.HashSet;
-import java.util.Set;
 public class ArrayBi05{
     /*Ejercicio 3 Realiza un programa que rellene un array de 6 filas por 10 columnas con números enteros
     positivos comprendidos entre 0 y 1000 (ambos incluidos). A continuación, el programa deberá dar la posición
     tanto del máximo como del mínimo. */
     public static void main(String[] args) {
         int[][] numeros = new int[6][10];
-        Set<Integer> generados = new HashSet<>();
         int fila,columna;
         int filamax = 0;
         int columnamax = 0;
         int filamin = 0;
         int columnamin = 0;
-        //Llenar el arreglo con numeros aleatorios        
+        boolean repetido;
+        //Rellenar el arreglo con numeros aleatorios
+        for (fila = 0; fila < 6; fila++) {
+            for (columna = 0; columna < 10; columna++) {
+                do {
+                    numeros[fila][columna] = (int) (Math.random() * 1001);
+                    //Comprobar si el numero generado ya esta en el array
+                    repetido = false;
+                    for (int i = 0; i < 10 * fila + columna; i++) {
+                        if (numeros[fila][columna] == numeros[i / 10][i % 10]) {
+                            repetido = true;
+                        }
+                    }
+                } while (repetido);
+            }            
+        }
+
+        /*//Llenar el arreglo con numeros aleatorios con hashSet
+        Set<Integer> generados = new HashSet<>();        
         for (fila = 0; fila < 6; fila++) {
             for (columna = 0; columna < 10; columna++) {
                 int numero;
@@ -23,7 +38,7 @@ public class ArrayBi05{
                 numeros[fila][columna] = numero;
                 generados.add(numero);
             }
-        }
+        } */
         //Señalizador de columnas
         System.out.print("        ");
         for (columna = 0; columna < 10; columna++) {

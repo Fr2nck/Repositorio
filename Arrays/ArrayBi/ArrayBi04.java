@@ -10,6 +10,7 @@ public class ArrayBi04 {
         int columnamax = 0;
         int filamin = 0;
         int columnamin = 0;
+        //Llenar con numeros aleatorios con numeros aleatorios
         for (fila = 0; fila < 6 ; fila++) {
             for (columna = 0; columna < 10; columna++) {
                 numeros[fila][columna] = (int)(Math.random() *1001); 

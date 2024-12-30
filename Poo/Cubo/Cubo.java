@@ -29,4 +29,7 @@ public class Cubo {
     public void lleno(){
         this.contenido = capacidad;
     }
+    public int faltante(int cap, int con){
+        return cap-con;
+    }
 }

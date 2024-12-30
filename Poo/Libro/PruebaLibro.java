@@ -4,5 +4,6 @@ public class PruebaLibro {
         Libro Coquito = new Libro();
         Libro Movil = new Libro();
         Libro Biblia = new Libro();
+        
     }
 }

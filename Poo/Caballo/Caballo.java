@@ -32,8 +32,7 @@ public class Caballo {
     }
     public double getpeso(){
         return this.peso;
-    }
-    
+    }    
         //Hacer que el caballo relinche
     public void relinchar(){
         System.out.println("Hiiiiieeeee");

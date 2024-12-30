@@ -5,9 +5,8 @@ public class Cubo {
     //Capacidad = Litros maximos que caben en el cubo, Contenido = Litros actuales del cubo
     //Metodos
         //Constructor
-    Cubo(int cap, int con){
+    Cubo(int cap){
         this.capacidad = cap;
-        this.contenido = con;
     }
         //Getter
     public int getcapacidad(){
@@ -22,5 +21,12 @@ public class Cubo {
     }
     public void setcontenido(int litros){
         this.contenido = litros;
+    }
+        //Otros metodos
+    public void vacia(){
+        this.contenido = 0;
+    }
+    public void lleno(){
+        this.contenido = capacidad;
     }
 }

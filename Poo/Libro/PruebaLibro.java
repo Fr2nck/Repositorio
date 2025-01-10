@@ -1,9 +1,9 @@
 package Poo.Libro;
 public class PruebaLibro {
     public static void main(String[] args) {
-        Libro Coquito = new Libro();
+        /*Libro Coquito = new Libro();
         Libro Movil = new Libro();
-        Libro Biblia = new Libro();
+        Libro Biblia = new Libro();*/
         
     }
 }

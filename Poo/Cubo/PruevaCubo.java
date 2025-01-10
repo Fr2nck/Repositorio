@@ -1,17 +1,33 @@
 package Poo.Cubo;
 public class PruevaCubo {
     public static void main(String[] args) {
-        Cubo cubo01 = new Cubo(10);
-        Cubo cubo02 = new Cubo(5);
-        Cubo cubo03 = new Cubo(15);
-        //Indicar el numero de cubo, su capacidad
-        System.out.println("El primer cubo tiene una capacidad de : " + cubo01.capacidad);
-        System.out.println("El sgundo cubo tiene una capacidad de : " + cubo02.capacidad);
-        System.out.println("El tercer cubo tiene una capacidad de : " + cubo03.capacidad);
-        //Ingresa contenido a los cubos
-        System.out.println("Ingresa la cantidad de litros para el primer cubo: ");
-        int  = Integer.parseInt(System.console().readLine());
-        //Indicar si el cubo esta lleno o vacio
-        System.out.println("Para llenar el primer cubo faltan: " + Cubo.faltante(cap, con));
+        Cubo micubito = new Cubo(5);
+        Cubo micubote = new Cubo(10);
+
+        System.out.println("Cubito \n");
+        micubito.pintaCubo();
+        System.out.println("Cubote \n");
+        micubote.pintaCubo();
+
+        System.out.println("Llena Cubito \n");
+        micubito.lleno();
+        micubito.pintaCubo();
+
+        System.out.println("Llena Cubote \n");
+        micubote.lleno();
+        micubote.pintaCubo();
+
+        System.out.println("Vacia Cubote \n");
+        micubote.vacia();
+        micubote.pintaCubo();
+
+        System.out.println("\nAhora vuelco el contenido de el cubito en el cubote\n");
+        micubito.vuelvaEn(micubote);
+
+        System.out.println("Cubito \n");
+        micubito.pintaCubo();
+
+        System.out.println("Cubote \n");
+        micubote.pintaCubo();
     }
 }

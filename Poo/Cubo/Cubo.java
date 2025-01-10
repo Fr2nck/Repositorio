@@ -29,7 +29,29 @@ public class Cubo {
     public void lleno(){
         this.contenido = capacidad;
     }
-    public int faltante(int cap, int con){
-        return cap-con;
+    // Pinta cubo en la pantalla
+    void pintaCubo() {
+        for (int nivel = this.capacidad; nivel > 0; nivel--) {
+            if (this.contenido >= nivel) {
+                System.out.println("#~~~~#");
+            } else {
+                System.out.println("#    #");
+            }
+        }
+        System.out.println("######");
+    }
+    // Volcar el contenido de un cubo sobre otro
+    void vuelvaEn(Cubo destino) {
+        int libres = destino.getcapacidad() - destino.getcontenido();
+
+        if (libres > 0) {
+            if (this.contenido <= libres) {
+                destino.setcontenido(destino.getcontenido() + this.contenido);
+                this.vacia();
+            } else {
+                this.contenido -= libres; // this.contenido = this.contenido - libres;
+                destino.lleno();
+            }
+        }
     }
 }

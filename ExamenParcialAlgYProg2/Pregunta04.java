@@ -11,25 +11,33 @@ public class Pregunta04{
         //Ingresar un numero
         System.out.print("Ingresa un número entero: ");
         int numero = Integer.parseInt(System.console().readLine());
-        // Convertir al sistema Morse
+
+        // Llamar a la funcion convertir al sistema Morse
         String resultado = convertirAMorse(numero);
-        // Mostrar el resultado
+
+        // Imprimir el resultado
         System.out.println("Número en código Morse: " + resultado);
     }
+
     // Función que convierte un número al sistema Morse
     public static String convertirAMorse(int numero) {
-      //Array de coficicacion para el numero morce 0 al 9
-      String[] morse = {"_ _ _ _ _", "._ _ _ _", ".._ _ _", "..._ _", "...._", ". . . . .", "_....", "_ _...", "_ _ _..", "_ _ _ _."};
-      StringBuilder resultado = new StringBuilder();
-      String numeroStr = String.valueOf(numero);
-      for (int i = 0; i < numeroStr.length(); i++) {
-          int digito = Character.getNumericValue(numeroStr.charAt(i));
-          resultado.append(morse[digito]);
-          // Agregar un espacio entre los códigos Morse de los dígitos
-          if (i < numeroStr.length() - 1) {
-              resultado.append(" ");
-          }
-      }
-      return resultado.toString();
-  }    
+        //Array de coficicacion para el numero morce 0 al 9
+        String[] morse = {"_ _ _ _ _", "._ _ _ _", ".._ _ _", "..._ _", "...._", ". . . . .", "_....", "_ _...", "_ _ _..", "_ _ _ _."};
+      
+        // Inicializamos un StringBuilder para agregar los numeros en codigo morce
+        StringBuilder resultado = new StringBuilder();
+        // Convertimos el numero entero (int) en cadena de "texto" 
+        String numeroStr = String.valueOf(numero);
+        // Recorre los digitos del numero ingresado, obtiene el codigo correspondiente al numero y lo agrega al StringBuilder
+        for (int i = 0; i < numeroStr.length(); i++) {
+            int digito = Character.getNumericValue(numeroStr.charAt(i));
+            resultado.append(morse[digito]);
+
+            // Agregar un separador entre los códigos Morse de los dígitos
+            if (i < numeroStr.length() - 1) {
+                resultado.append(" ");
+            }
+        }
+        return resultado.toString();
+    }    
 }

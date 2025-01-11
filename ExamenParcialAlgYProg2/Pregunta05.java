@@ -1,5 +1,4 @@
 package ExamenParcialAlgYProg2;
-
 /*Pregunta 5: Crea una función que convierta cada dígito de un número n en su palabra 
 correspondiente y devuelva el resultado como una cadena de caracteres. Por ejemplo, 
 el número 470213 se convertiría en: "cuatro, siete, cero, dos, uno, tres". Ten en cuenta
@@ -9,27 +8,36 @@ el número 470213 se convertiría en: "cuatro, siete, cero, dos, uno, tres". Ten
   generarse exclusivamente en el programa principal utilizando la instrucción print.*/
 public class Pregunta05{
       public static void main(String[] args) {
-        //Ingresar un numero
+        // Ingresar un numero
         System.out.print("Ingresa un número entero: ");
         int numero = Integer.parseInt(System.console().readLine());
-        // Convertir el número a palabras
+
+        // Llama a la funcion convertir el número a palabras
         String resultado = convertirAPalabras(numero);
-        // Mostrar el resultado
+
+        // Imprimir el resultado
         System.out.println("Número en palabras: " + resultado);
+        
     }
+
     // Función que convierte un número en palabras
     public static String convertirAPalabras(int numero) {
-      // Tabla de palabras para los dígitos del 0 al 9
-      String[] palabras = {"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"};
 
+      // Array de palabras para los dígitos del 0 al 9
+      String[] palabras = {"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"};
+      
+      // Inicializamos un StringBuilder para agregar los numeros como palabras
       StringBuilder resultado = new StringBuilder();
+
+      // Convertimos el numero entero (int) en cadena de "texto"      
       String numeroStr = String.valueOf(numero);
 
+      // Recorre los digitos del numero ingresado, obtiene la palabra correspondiente al numero y lo agrega al StringBuilder
       for (int i = 0; i < numeroStr.length(); i++) {
           int digito = Character.getNumericValue(numeroStr.charAt(i));
           resultado.append(palabras[digito]);
 
-          // Agregar una coma si no es el último dígito
+          // Agregar una separador si no es el último dígito
           if (i < numeroStr.length() - 1) {
               resultado.append(", ");
           }

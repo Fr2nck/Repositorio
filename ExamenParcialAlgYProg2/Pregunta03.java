@@ -8,28 +8,35 @@ en pantalla; la salida debe realizarse únicamente en el programa principalmedia
 instrucción print.*/
 public class Pregunta03 {    
     public static void main(String[] args) {
-        //Ingresar un numero
+        // Ingresar un numero
         System.out.print("Ingresa un número entero: ");
         int numero = Integer.parseInt(System.console().readLine());
 
-        //Convertir al sistema de palotes
+        // Llamar a la funcion que combierte el numero al sistema de palotes
         String resultado = convertirAPalotes(numero);
 
-        //Mostrar el resultado
+        // Imprimir el resultado
         System.out.println("Número en sistema de palotes: " + resultado);
     }
+    // Función que convierte un número al sistema de "Palotes"
     public static String convertirAPalotes(int numero) {
+
+        // Inicializamos un StringBuilder para agregar los digitos en sistema "Palotes"
         StringBuilder resultado = new StringBuilder();
+
+        // Convertimos el numero entero (int) en cadena de "texto" 
         String numeroStr = String.valueOf(numero);
 
+        // Recorre los digitos del numero ingresado
         for (int i = 0; i < numeroStr.length(); i++) {
             int digito = Character.getNumericValue(numeroStr.charAt(i));
 
-            //Agregar los palotes correspondientes al dígito
+            // Agregar la cantidad de palotes correspondientes al dígito
             for (int j = 0; j < digito; j++) {
                 resultado.append("|");
             }
-            //Agregar un separador si no es el último dígito
+
+            // Agregar un separador 
             if (i < numeroStr.length() - 1) {
                 resultado.append("-");
             }

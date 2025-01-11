@@ -1,7 +1,4 @@
 package ExamenParcialAlgYProg2;
-
-import java.util.Scanner;
-
 /*Pregunta 3: Crea una función que convierta un número entero n al sistema de "palotes" 
 y devolver el resultado como una cadena de caracteres. Por ejemplo, el número 470213 en 
 formato decimal se convertirá en||||-|||||||--||-|-||| en el sistema de palotes.En el 
@@ -28,7 +25,7 @@ public class Pregunta03 {
         for (int i = 0; i < numeroStr.length(); i++) {
             int digito = Character.getNumericValue(numeroStr.charAt(i));
 
-            // Agregar los palotes correspondientes al dígito
+            //Agregar los palotes correspondientes al dígito
             for (int j = 0; j < digito; j++) {
                 resultado.append("|");
             }

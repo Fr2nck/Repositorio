@@ -9,19 +9,19 @@ países utilizando el array proporcionado (no se deben escribir directamente en 
 Además, debes calcular y mostrar la estatura media, mínima y máxima para cada país.*/
 public class Pregunta02 {
     public static void main(String[] args) {
-        //Array para almacenar estaturas
+        // Array para almacenar estaturas
         int[][] estatura = new int[4][5];
-        //Array para almacenar los paises
+        // Array para almacenar los paises
         String[] paises = {"España", "Rusia", "Japon", "Australia"};
-        //Rellenar el array de estaturas con numeros aleatorios
+        // Rellenar el array de estaturas con numeros aleatorios
         for (int i = 0; i < estatura.length; i++) {
             for (int j = 0; j < estatura[i].length; j++) {
                 estatura[i][j] = 140 + (int) (Math.random() * 71);
             }
         }
-        //Inicializamos las variables para fila y columna
+        // Inicializamos las variables para fila y columna
         int fila, columna;
-        //Imprimimos el encabezado
+        // Imprimimos el encabezado
         System.out.printf("%-10s", "País");
         for (int i = 0; i < estatura[0].length; i++) {
             System.out.printf("%10s", " ");
@@ -42,6 +42,7 @@ public class Pregunta02 {
                 if (valor > maximo) maximo = valor;
                 if (valor < minimo) minimo = valor;
             }
+            //Calculamos la media
             int media = suma / estatura[fila].length;
             // Mostrar estadísticas
             System.out.printf("%10d%10d%10d%n", media, minimo, maximo);

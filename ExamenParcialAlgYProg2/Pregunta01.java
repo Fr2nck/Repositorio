@@ -14,14 +14,16 @@ public class Pregunta01 {
         // Leer las coordenadas iniciales del alfil
         String posicionInicial = System.console().readLine("Ingrese la posición inicial del alfil (ejemplo: e4): ");
 
-        // Determinar movimientos posibles
+        // Llamar a la funcion que determina los posibles movimientos
         List<String> movimientos = calcularMovimientos(posicionInicial);
+
         // Imprimir resultados
         System.out.println("Movimientos posibles:");
         for (String movimiento : movimientos) {
             System.out.println(movimiento);
         }
     }
+
     // Método para calcular los movimientos posibles del alfil
     private static List<String> calcularMovimientos(String posicionInicial) {
         List<String> movimientos = new ArrayList<>();
@@ -43,7 +45,7 @@ public class Pregunta01 {
                 if (fila >= 1 && fila <= 8 && columna >= 'a' && columna <= 'h') {
                     movimientos.add(String.valueOf(columna) + fila);
                 } else {
-                    break; // Salir si se sale del tablero
+                    break;
                 }
             }
         }

@@ -1,5 +1,5 @@
 package Poo.Gato;
-public class PruevaGato {
+public class PruebaGato {
     public static void main(String[] args) {
         Gato silvestre = new Gato("negro y blanco", "chusco", "macho", 15, 28.5);
         //Gato gardfield = new Gato("anaranjado", "empachado y chusco", "macho", 12, 50.0);

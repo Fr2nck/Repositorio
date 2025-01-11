@@ -1,5 +1,5 @@
 package Poo.Cubo;
-public class PruevaCubo {
+public class PruebaCubo {
     public static void main(String[] args) {
         Cubo micubito = new Cubo(5);
         Cubo micubote = new Cubo(10);

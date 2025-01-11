@@ -1,5 +1,5 @@
 package Poo.Caballo;
-public class PruevaCaballo {
+public class PruebaCaballo {
     public static void main(String[] args) {
         Caballo caballo01 = new Caballo("Triton", "Negro", "Shire", "Macho", 15, 420);
         Caballo caballo02 = new Caballo("Rayo", "blanco", "Pura sangre", "Macho",8,410);

@@ -8,29 +8,32 @@ función dentro de un bucle para imprimir las líneas del triángulo, donde cada
 tendrá un número creciente de caracteres, según la altura especificada por el usuario.*/
 public class Pregunta06{    
     public static void main(String[] args) {
-        // Solicitar la altura del triángulo
-        System.out.print("Ingrese la altura del triángulo: ");
-        int altura = scanner.nextInt();
+        // Ingresar la altura del triangulo
+        System.out.print("Ingresa la altura del triangulo: ");
+        int altura = Integer.parseInt(System.console().readLine());
 
-        // Solicitar el carácter para dibujar el triángulo
-        System.out.print("Ingrese el carácter para dibujar el triángulo: ");
-        char caracter = scanner.next().charAt(0);
+        // Ingresar el caracter para el triangulo
+        System.out.print("Ingresa un carácter: ");
+        char caracter = System.console().readLine().charAt(0);
 
-        // Dibujar el triángulo
-        dibujarTriangulo(caracter, altura);
+        // Llamar a la funcion dibujar triangulo
+        DibujarTriangulo(caracter, altura);
     }
-        // Función para imprimir una línea con un carácter repetido
-        public static void linea(char caracter, int repeticiones) {
-            for (int i = 0; i < repeticiones; i++) {
-                System.out.print(caracter);
-            }
-            System.out.println();
+
+    // Función para imprimir el triángulo 
+    public static void DibujarTriangulo(char caracter, int altura) {
+        for (int i = altura; i >= 1; i--) {
+            linea(caracter, i);
         }
+    }
+
+    // Función para imprimir las lineas con el caracter 
+    public static void linea(char caracter, int repeticiones) {
+        for (int i = 0; i <  repeticiones; i++) {
+            System.out.print(caracter);
+        }
+        System.out.println();
+    }
     
-        // Función para dibujar un triángulo relleno
-        public static void dibujarTriangulo(char caracter, int altura) {
-            for (int i = 1; i <= altura; i++) {
-                linea(caracter, i);
-            }
-        }
+
 }

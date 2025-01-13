@@ -5,5 +5,5 @@ public class HolaMundo {
         System.out.println("El valor maximo es: " + a);
         int b = Integer.MIN_VALUE;
         System.out.println("El valor minimo es: " + b);
-    }    
+    }        
 } 

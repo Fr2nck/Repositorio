@@ -7,20 +7,19 @@ public class ConceptoMetotodos {
       incluso esta lista puede almacenar Objetos.
 
       Metodos pre establecidos:
-      -add (Elemento) Agrega un elemento al final de la lista.
-      -add (Indice, Elemento) Agrega un elemento en una posicion determinada, desplasando al elemento.
+      -add (Ele) Agrega un elemento a la lista.
+      -add (Ind,Ele) Agrega un elemento en una posicion determinada, desplasando al elemento.
       -clear () Elimina todos los elementos de la lista.
-      -contains (Elemento) Retorna V o F si existe un elemento determinado en la lista.
-      -get (indice) Retorna el elemento que se encuentra en un posicion determinada.
-      -indexOf (Elemento) Retorna el indice en el que se encuentra el elemento buscado
+      -contains (Ele) Retorna V o F si existe un elemento determinado.
+      -get (ind) Retorna el elemento que se encuentra en un posicion determinada.
+      -indexOf (Ele) Retorna el indice en el que se encuentra el elemento determinado.
       -isEmpty () Retorna V o F si existe un elemento en la lista.
       -remove (Indice) Remueve el elemento que se encuentra en el indice. 
       -remove (Elemento) Remueve el elemento determinado.
       -remiveIf (Filtro) Remueve un elemento que cumpla una condicion.
       -set (Indice,Elemento) Sobre escribe un elemento por otro.
       -size () Retorna el numero de elementos que tiene la lista.
-      -toArray () Combierte una Lista en un Array.
-    */        
+      -toArray () Combierte una Lista en un Array.    */        
     public static void main(String[] args) {
     }
 }

@@ -1,7 +1,8 @@
 package ArrayList;
 public class ConceptoMetotodos {
-        /*Listas en java
-    * arraylist()   [][][][][]
+    /*
+      Listas en java
+      arraylist()   [][][][][]
       Es una estructura de datos en forma de lista que 
       permite almacenar elementos de un mismo tipo de dato,
       incluso esta lista puede almacenar Objetos.
@@ -19,7 +20,8 @@ public class ConceptoMetotodos {
       -remiveIf (Filtro) Remueve un elemento que cumpla una condicion.
       -set (Indice,Elemento) Sobre escribe un elemento por otro.
       -size () Retorna el numero de elementos que tiene la lista.
-      -toArray () Combierte una Lista en un Array.    */        
+      -toArray () Combierte una Lista en un Array.
+    */        
     public static void main(String[] args) {
     }
 }

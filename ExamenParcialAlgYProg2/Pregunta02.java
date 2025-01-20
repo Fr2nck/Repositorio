@@ -13,6 +13,7 @@ public class Pregunta02 {
         int[][] estatura = new int[4][5];
         // Array para almacenar los paises
         String[] paises = {"España", "Rusia", "Japon", "Australia"};
+        
         // Rellenar el array de estaturas con numeros aleatorios
         for (int i = 0; i < estatura.length; i++) {
             for (int j = 0; j < estatura[i].length; j++) {

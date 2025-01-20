@@ -1,9 +1,9 @@
 package Poo.Gato;
 public class PruebaGato {
     public static void main(String[] args) {
-        Gato silvestre = new Gato("negro y blanco", "chusco", "macho", 15, 28.5);
+        Gato silvestre = new Gato("","negro y blanco", "chusco", "macho", 15, 28.5);
         //Gato gardfield = new Gato("anaranjado", "empachado y chusco", "macho", 12, 50.0);
-        Gato kyty = new Gato("rosado", "peli corta", "hembra", 15, 30.0);
+        Gato kyty = new Gato("","rosado", "peli corta", "hembra", 15, 30.0);
 
         //Hacer que el gato maulle
         System.out.println("Hola Gatito");

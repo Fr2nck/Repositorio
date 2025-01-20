@@ -1,14 +1,15 @@
 package Poo.Gato;
 public class Gato {
     //Atributos
-    String color,raza,sexo;
-    int edad;
-    double peso;
+    public String nombre,color,raza,sexo;
+    public int edad;
+    public double peso;
 
     //Metodos
 
     //Constructor
-    Gato(String c,String r,String s,int e,double p){
+    public Gato(String n, String c,String r,String s,int e,double p){
+        this.nombre = n;
         this.color = c;
         this.raza = r;
         this.sexo = s;
@@ -16,6 +17,9 @@ public class Gato {
         this.peso = p;
     }
     //getter
+    public String getnombre(){
+        return this.nombre;
+    }
     String getcolor(){
         return this.color;
     }
@@ -32,12 +36,19 @@ public class Gato {
         return this.peso;
     }
     //Hacer que el gato maulle
-    void maullar(){
-        System.err.println("Miauuuuu, Miauuuuu");
+    public void maullar(){
+        System.out.println("Miauuuuu, Miauuuuu");
     }
+
+    //Hacer que el gato maulle (String)
+    public String maullido(){
+        String maullido = "Miauuuuu, Miauuuuu";
+        return maullido;
+    }
+
     //Hacer que el gato ronronee
     /*A los gatos les gusta solo el pescado*/
-    void come(String comida){
+    public void come(String comida){
         if (comida.equals("pescado")) {
             System.out.println("Ñam, Ñam!!!!!");
         } else {

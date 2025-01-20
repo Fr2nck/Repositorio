@@ -5,8 +5,6 @@ public class Gato {
     public int edad;
     public double peso;
 
-    //Metodos
-
     //Constructor
     public Gato(String n, String c,String r,String s,int e,double p){
         this.nombre = n;

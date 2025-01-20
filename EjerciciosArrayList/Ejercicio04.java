@@ -1,6 +1,7 @@
 package EjerciciosArrayList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /*Ejercicio 4 Realiza un programa equivalente al anterior pero en esta ocasión, 
 el programa debe ordenar palabras en lugar de números.*/
@@ -15,6 +16,9 @@ public class Ejercicio04{
             String palabra = System.console().readLine();
             ListPalabras.add(palabra);
         }
+
+        //Ordenar los elementos del ArrayList
+        Collections.sort(ListPalabras);
 
         // Mostrar todos los elementos del ArrayList
         System.out.println("El ArrayList contiene los siguientes elementos: ");

@@ -22,5 +22,8 @@ public class ArrayList02 {
         for (Gato Gatos:g){
             System.out.println(Gatos.getnombre() + ":  " + Gatos.maullido());
         }
+
+        // Ordenar a los gatos por su nombre
+
     }
 }

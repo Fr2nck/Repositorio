@@ -1,10 +1,14 @@
 package Poo.Gato;
-public class Gato {
+
+
+public class Gato implements Comparable<Gato>{
+    
     //Atributos
     public String nombre,color,raza,sexo;
     public int edad;
     public double peso;
 
+    //Metodos
     //Constructor
     public Gato(String n, String c,String r,String s,int e,double p){
         this.nombre = n;
@@ -18,19 +22,19 @@ public class Gato {
     public String getnombre(){
         return this.nombre;
     }
-    String getcolor(){
+    public String getcolor(){
         return this.color;
     }
-    String getraza(){
+    public String getraza(){
         return this.raza;
     }
-    String getsexo(){
+    public String getsexo(){
         return this.sexo;
     }
-    int getedad(){
+    public int getedad(){
         return this.edad;
     }
-    double getpeso(){
+    public double getpeso(){
         return this.peso;
     }
     //Hacer que el gato maulle
@@ -65,5 +69,18 @@ public class Gato {
                 System.out.println("Ven aqui te voy a moler a palos!!!!!");
             }
         }
+    }
+
+    //Metodos adicionales para ejercicios ArrayList
+    public int compareTo(Gato g){
+        return(this.nombre ).compareTo(g.getnombre());        
+    }
+
+    public boolean equals (Gato g){
+        return(this.nombre ).equals(g.getnombre());
+    }
+
+    public String ToString(){
+        return "nombre" + this.nombre + "\nRaza" + this.raza + "\nColor" + this.color ;
     }
 }

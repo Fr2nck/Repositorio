@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMap01 {
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
 
         // Inicializamos el HashMap

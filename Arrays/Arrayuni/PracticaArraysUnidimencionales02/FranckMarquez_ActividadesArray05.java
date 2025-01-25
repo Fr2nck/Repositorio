@@ -1,4 +1,4 @@
-package EjerciciosArraysUnidimencionales;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales02;
 
 public class FranckMarquez_ActividadesArray05 {
     /*Ejercicio 5 Escribe un programa que rellene un array de 100 elementos

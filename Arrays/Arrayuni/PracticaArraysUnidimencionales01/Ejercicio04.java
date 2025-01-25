@@ -1,4 +1,4 @@
-package Ejercicios;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales01;
 public class Ejercicio04 {
     /*Ejercicio 4: Realiza un programa que pida la temperatura media que ha hecho en 
     cada mes de un determinado año y que muestre a continuación un diagrama de barras
@@ -19,20 +19,6 @@ public static void main(String[] args) {
             };
         };
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*System.out.println("Los valores ingresados al arreglo son:");
     for (int i = 0; i < temperatura.length; i++) {
         System.out.println("El mes " + i + " Tiene una temperatura de: " + "[" + temperatura[i] + "]" + " Grados");

@@ -1,4 +1,4 @@
-package EjerciciosArraysUnidimencionales;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales02;
 public class FranckMarquez_ActividadesArray01 {
     /*Ejercicio 1 Realiza un programa que pida 8 números enteros y que luego 
     muestre esos números junto con la palabra “par” o “impar” según proceda.*/

@@ -1,4 +1,4 @@
-package Ejercicios;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales01;
 public class Ejercicio02 {
     /*Ejercicio 2. Escribe un programa que lea 15 numeros por teclado y que los almacene 
 en un array, rota los elementos de ese array, es decir, el elemento de la posicion 0 debe pasar 

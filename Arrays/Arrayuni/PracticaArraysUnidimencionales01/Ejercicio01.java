@@ -1,4 +1,4 @@
-package Ejercicios;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales01;
 
 public class Ejercicio01 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package EjerciciosArraysUnidimencionales;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales02;
 public class FranckMarquez_ActividadesArray02 {
     /*Ejercicio 2 Escribe un programa que genere 20 números enteros aleatorios 
     entre 0 y 100 y que los almacene en un array. El programa debe ser capaz de pasar

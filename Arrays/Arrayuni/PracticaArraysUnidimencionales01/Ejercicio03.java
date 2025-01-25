@@ -1,4 +1,4 @@
-package Ejercicios;
+package Arrays.Arrayuni.PracticaArraysUnidimencionales01;
 public class Ejercicio03 {
         /*Ejercicio 3. Escribe un programa que genere 100 numeros aleatorios del 0 al 20 y que 
         los muestre en pantalla seperados por espacios. El programa pedira entonces por teclado dos

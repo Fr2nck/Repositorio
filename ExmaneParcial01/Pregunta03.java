@@ -1,4 +1,4 @@
-package ExamenParcialAlgYProg2;
+package ExmaneParcial01;
 /*Pregunta 3: Crea una función que convierta un número entero n al sistema de "palotes" 
 y devolver el resultado como una cadena de caracteres. Por ejemplo, el número 470213 en 
 formato decimal se convertirá en||||-|||||||--||-|-||| en el sistema de palotes.En el 

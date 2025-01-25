@@ -1,4 +1,4 @@
-package ExamenParcialAlgYProg2;
+package ExmaneParcial01;
 
 import java.util.ArrayList;
 import java.util.List;

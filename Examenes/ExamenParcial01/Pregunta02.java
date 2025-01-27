@@ -1,4 +1,4 @@
-package ExmaneParcial01;
+package Examenes.ExamenParcial01;
 /*Pregunta 2: Desarrolla un programa que calcule la estatura media, mínima y máxima 
 en centímetros de personas de diferentes países. El array que contiene los nombres 
 de los países es el siguiente: país = {“España”, “Rusia”, “Japón”, “Australia”}. 

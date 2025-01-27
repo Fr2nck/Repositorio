@@ -1,4 +1,4 @@
-package ExmaneParcial01;
+package Examenes.ExamenParcial01;
 /*Pregunta 6: Crea un programa que dibuje un triángulo relleno de asteriscos (*) 
 o de cualquier otro carácter que elija el usuario, según la altura que este ingrese. 
 Utiliza una función para hacer el código más sencillo y modular. Por ejemplo, puedes 

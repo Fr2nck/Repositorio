@@ -1,4 +1,4 @@
-package ExmaneParcial01;
+package Examenes.ExamenParcial01;
 /*Pregunta 4: Crea una función que permita convertir un número entero n al sistema de
  codificación Morse y devolver el resultado como una cadena de caracteres. Por ejemplo,
   el número 213 se convertirá en .._ _ _._ _ _ _..._ _ en código Morse.En el 

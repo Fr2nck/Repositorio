@@ -1,4 +1,4 @@
-package ExmaneParcial01;
+package Examenes.ExamenParcial01;
 /*Pregunta 5: Crea una función que convierta cada dígito de un número n en su palabra 
 correspondiente y devuelva el resultado como una cadena de caracteres. Por ejemplo, 
 el número 470213 se convertiría en: "cuatro, siete, cero, dos, uno, tres". Ten en cuenta

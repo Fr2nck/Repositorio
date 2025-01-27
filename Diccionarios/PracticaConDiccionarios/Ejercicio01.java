@@ -1,4 +1,4 @@
-package EjerciciosConDiccionarios;
+package Diccionarios.PracticaConDiccionarios;
 
 import java.util.HashMap;
 

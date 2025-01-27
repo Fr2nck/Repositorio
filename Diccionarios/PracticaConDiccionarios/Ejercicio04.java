@@ -1,4 +1,4 @@
-package EjerciciosConDiccionarios;
+package Diccionarios.PracticaConDiccionarios;
 
 import java.util.ArrayList;
 import java.util.Collections;

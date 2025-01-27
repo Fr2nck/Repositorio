@@ -13,13 +13,13 @@ public class Fichero01 {
             BufferedReader brAbancay =new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Abancay.txt"));
             String linea = "";
 
-            // Estructura para leer las lineas del archibo
+            // Estructura repetitiva para leer las lineas del archibo
             while (linea != null) {
                 System.out.println(linea);
                 linea = brAbancay.readLine();
             }
             
-            // Cerrar la estructura
+            // Cerrar la estructura repetitiva
             brAbancay.close();
 
         // Mostrar errores

@@ -8,9 +8,14 @@ import java.io.IOException;
 public class Fichero01 {
     public static void main(String[] args) {
 
-        try {            
+        System.out.println("¿Que archibo quieres mostrar?");
+        System.out.println("Abancay, Andahuaylas o Cuzco");
+        String ciudad = System.console().readLine();
+
+        try {
+
             // (BufferedReader)almacena la informacion (caracter por caracter) en tiempo real
-            BufferedReader brAbancay =new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Abancay.txt"));
+            BufferedReader brAbancay =new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\" + ciudad + ".txt"));
             String linea = "";
 
             // Estructura repetitiva para leer las lineas del archibo
@@ -20,18 +25,17 @@ public class Fichero01 {
             }
             
             // Cerrar la estructura repetitiva
-            brAbancay.close();
+            brAbancay.close();    
 
         // Mostrar errores
         // Error (no se encontro el fichero)
         } catch (FileNotFoundException fnfe) {
-            System.out.println("No se encontro el fichero Abancay.txt");
+            System.out.println("No se encontro el fichero " + ciudad + ".txt");
         }
 
         // Error (no se pudo leer el fichero)
         catch(IOException ioe){
-            System.out.println("No se puede leer el fichero Abancay.txt");
+            System.out.println("No se puede leer el fichero " + ciudad + ".txt");
         }
-
     }
 }

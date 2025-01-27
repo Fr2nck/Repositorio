@@ -9,7 +9,7 @@ public class Fichero01 {
     public static void main(String[] args) {
 
         try {            
-            // Almacena la informacion (caracter por caracter) en tiempo real
+            // (BufferedReader)almacena la informacion (caracter por caracter) en tiempo real
             BufferedReader brAbancay =new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Abancay.txt"));
             String linea = "";
 

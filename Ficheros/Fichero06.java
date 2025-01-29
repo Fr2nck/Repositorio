@@ -9,7 +9,7 @@ public class Fichero06 {
         
         String archivo = System.console().readLine();
 
-        File fichero = new File("." + archivo);
+        File fichero = new File(archivo);
 
         if (fichero.exists()) {
             fichero.delete();

@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Ficheros04 {
+public class Fichero04 {
     public static void main(String[] args) {
         try{
         BufferedReader brAbancay = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\Abancay.txt")) ;

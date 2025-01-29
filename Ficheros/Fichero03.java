@@ -18,7 +18,9 @@ public class Fichero03 {
             bwFrutas.close();
 
             System.out.println("Las frutas fueron agregadas correctamente a la lista");
-            
+
+        // Mostrar errores
+        // Error (no se encontro el fichero)    
         } catch (FileNotFoundException fnfe) {
             System.out.println("No se encontro el fichero Notas.txt");
         }

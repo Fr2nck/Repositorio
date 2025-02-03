@@ -24,7 +24,7 @@ public class Fichero02 {
 
             System.out.println("El alumno tiene " + i + " notas");
 
-            System.out.println("%.2f"+"El promedio es: " + suma/(double)i);
+            System.out.println("El promedio es: " + suma/(double)i);
             
         // Mostrar errores
         // Error (no se encontro el fichero)

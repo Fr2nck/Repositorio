@@ -55,12 +55,12 @@ public class Fichero04 {
         // Mostrar errores
         // Error (no se encontro el fichero)
         } catch (FileNotFoundException fnfe) {
-            System.out.println("No se encontro el fichero Notas.txt");
+            System.out.println("No se encontro el fichero.");
         }
 
         // Error (no se pudo leer el fichero)
         catch(IOException ioe){
-            System.out.println("No se puede leer el fichero Notas.txt");
+            System.out.println("No se puede leer el fichero.");
         } 
     }
 }

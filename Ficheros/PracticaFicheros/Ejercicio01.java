@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
-
 public class Ejercicio01 {
     /*Pregunta 1 Escribe un programa que guarde en un fichero con nombre primos.dat
      los números primos que hay entre 1 y 500.*/

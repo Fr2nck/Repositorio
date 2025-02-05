@@ -34,7 +34,7 @@ public class Ejercicio04 {
             Collections.sort(ListPalabras);
 
             for(String s:ListPalabras){
-                bwPalabrasSort.write(s);
+                bwPalabrasSort.write(s + "\n");
             }
             bwPalabrasSort.close();
 

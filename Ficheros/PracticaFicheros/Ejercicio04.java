@@ -25,16 +25,18 @@ public class Ejercicio04 {
 
             while (linea != null) {
                 ListPalabras.add(linea);
+                linea = brPalabras.readLine();
             }
+            brPalabras.close();
+
+            ListPalabras.remove(0);
 
             Collections.sort(ListPalabras);
 
-            bwPalabrasSort.write(ListPalabras);
-
-
-            brPalabras.close();
+            for(String s:ListPalabras){
+                bwPalabrasSort.write(s);
+            }
             bwPalabrasSort.close();
-
 
         } catch (FileNotFoundException fnfe) {
             System.out.println("No se encontro el fichero.");
@@ -44,5 +46,5 @@ public class Ejercicio04 {
         catch(IOException ioe){
             System.out.println("No se puede leer el fichero.");
         }  
-        }
+    }
 }

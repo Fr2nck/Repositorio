@@ -13,6 +13,19 @@ public class Ejercicio05 {
         try {
             BufferedReader brPalabras = new BufferedReader(new FileReader("C:\\Users\\FRANCK\\Desktop\\Algoritmos y Programacion 2\\Ficheros\\EjerciciosConFicheros\\Leyenda.txt"));
             
+            String palabra = System.console().readLine("Ingresa la palabra que quieres buscar: ");
+
+            String linea = "";
+            
+            System.out.println("El fichero Leyenda.txt contiene: ");
+            while (linea != null) {
+                System.out.println(linea);
+                linea = brPalabras.readLine();
+            }
+            brPalabras.close();
+
+
+
         } catch (FileNotFoundException fnfe) {
             System.out.println("No se encontro el fichero.");
         }

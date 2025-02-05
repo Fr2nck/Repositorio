@@ -2,6 +2,7 @@ package Ficheros;
 
 import java.io.File;
 
+    //Borrar un fichero
 public class Fichero06 {
     public static void main(String[] args) {
 
